@@ -1,0 +1,17 @@
+{
+  "name": "1x2network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "author": "Juan Castel",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^28.1.1",
+    "typescript": "^4.7.4"
+  }
+}
