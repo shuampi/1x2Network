@@ -1,18 +1,9 @@
-const arrayObjects1 = [{ id: 1 }, { id: 2 }]; //   [[{ id: 1 }, { id: 2 }]]
-const arrayObjects2 = [{ id: 1 }, { id: 1 }, { id: 1 }, { id: 2 }]; //  [[{ id: 1 }]]
-const arrayObjects3 = [{ id: 1 }, { id: 1 }, { id: 2 }, { id: 2 }, { id: 3 }];
-const arrayObjects4 = [
-  { id: 1 },
-  { id: 2 },
-  { id: 2 },
-  { id: 3 },
-  { id: 3 },
-  { id: 4 },
-  { id: 4 },
-];
-const arrayObjects5 = [{ id: 1 }, { id: 1 }, { id: 1 }, { id: 1 }];
-///
+
 export default function array2D(arrayInput) {
+
+if(Array.isArray(arrayInput) && arrayInput.length > 0)
+  {
+
   const container = [];
   const duplicatesRemoved = [];
 
@@ -47,6 +38,9 @@ export default function array2D(arrayInput) {
   }
 
   return container;
+  } else {
+    console.log('insert valid input')
+  }
 }
 
-console.log("array2D(arrayObjects3", array2D(arrayObjects1));
+// console.log("array2D(arrayObjects3", array2D(arrayObjects1));
